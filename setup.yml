@@ -23,8 +23,9 @@
       msg: "{{ test_no_var | default(88) }}" 
       
   - name: Hello user
-    msg: "Hallo {{ item }}"
-    loop:
-      - peter
-      - karl
-      - udo
+    debug:
+      msg: "Hallo {{ item }}"
+      loop:
+        - peter
+        - karl
+        - udo
