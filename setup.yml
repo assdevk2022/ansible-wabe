@@ -13,3 +13,7 @@
     file:
       path: /tmp/test.txt
       state: touch
+      
+  - name: Hello var
+    debug:
+      msg: "{{ test_var }}" 
