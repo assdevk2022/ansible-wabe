@@ -16,4 +16,8 @@
       
   - name: Hello var
     debug:
-      msg: "{{ test_var }}" 
+      msg: "{{ test_var | upper}}" 
+      
+  - name: Hello no var
+    debug:
+      msg: "{{ test_no_var | default(88) }}" 
