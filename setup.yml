@@ -12,6 +12,4 @@
   - name: Create file
     file:
       path: /tmp/test.txt
-      owner: root
-      group: root
-      mode: '777'
+      state: touch
