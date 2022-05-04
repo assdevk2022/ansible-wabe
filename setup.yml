@@ -25,7 +25,7 @@
   - name: Hello user
     debug:
       msg: "Hallo {{ item }}"
-      loop:
-        - peter
-        - karl
-        - udo
+    loop:
+      - peter
+      - karl
+      - udo
